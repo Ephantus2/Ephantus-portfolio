@@ -1,0 +1,36 @@
+.graphic-projects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    
+}
+.graphic-projects div{
+    width: auto;
+}
+.graphic-projects div img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+button{
+    border: none;
+    background-color: #0f0f0fce;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    align-self: center;
+    margin: auto;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.5;
+}
+@media(min-width:900px){
+    .graphic-projects{
+    grid-template-columns: repeat(4,1fr);
+    
+}
+}
